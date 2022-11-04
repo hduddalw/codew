@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--In the tab, next to the favicon-->
+	<!-- cmnd + / -->
+	<title>Yo</title>
+
+	<style>
+		.lol {
+			color: green;
+			font-size: large;
+		}
+		.lolol {
+			letter-spacing: 100px;
+			text-shadow: 5px 5px 5px rgb(0, 255, 17);
+			font-size: 30px;
+			text-align:center;
+			letter-spacing: 100px;
+			font-weight:5000px;
+		}		
+	</style>
+</head>
+
+<body>
+
+	<p class="lol">
+		<strong>Hii</strong></p>
+	<p><em>Lorem ipsum</em> is placeholder text <br>commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+	<br>
+
+	<h1 class="lolol">Heading</h1>
+	<h2>Heading 02 Subtitle</h2>
+
+	<ol>
+		<li> hello </li>
+		<li> hello </li>
+		<li> hello </li>
+	</ol>
+
+	<h3><a href="https://www.google.com/" target="_blank"> Google </a></h3>
+
+	<img src="assets/mel.webp">
+
+	<div style="color:pink; font-family: 'Courier New', Courier, monospace;">
+		<h1>Heading</h1>
+		<p>Paragraph</p>
+	</div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>

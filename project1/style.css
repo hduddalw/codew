@@ -1,0 +1,35 @@
+.lol {
+    color: green;
+    font-size: large;
+}
+.lolol {
+    letter-spacing: 100px;
+    text-shadow: 5px 5px 5px rgb(115, 0, 255);
+    font-size: 30px;
+    text-align:center;
+    letter-spacing: 100px;
+    font-weight:5000px;
+    font-family: fantasy;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}		
+
+.coolclass {
+    color: brown;
+    border: 3px solid black;
+    padding: 10px;
+    max-width: 900px;
+    opacity: 1;
+    background-color: bisque;
+    border-radius: 5px;
+    cursor: grab;
+    position: absolute;
+    left: 50px;
+    top: 500px;
+}
+
+.coolclass:hover {
+    background: pink;
+    border-radius: 100px;
+
+}
